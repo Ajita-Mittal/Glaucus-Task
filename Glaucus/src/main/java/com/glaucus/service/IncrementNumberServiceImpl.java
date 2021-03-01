@@ -27,7 +27,7 @@ public class IncrementNumberServiceImpl implements IncrementNumberServiceI {
 	public IncrementNumber  getIncrement() {
 		IncrementNumber incrementNumber = new IncrementNumber();
 		try {
-		int incCounter = atomicInteger.getAndIncrement();  // incrementing value
+		int incCounter = atomicInteger.incrementAndGet();  // incrementing value
 
 		incrementNumber.setId(id);
 		incrementNumber.setIncreement(incCounter);   //Setting the incremented value
