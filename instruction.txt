@@ -1,0 +1,12 @@
+Instruction to run this application.
+
+Step-1  Checkout from git repo (https://github.com/Ajita-Mittal/Glaucus-Task.git)
+Step-2  Open it on eclipse/sts and import the project as maven.
+Step-3  Update project:  Maven -> update project
+step-4  Used embedded h2 of spring boot. Change the url of h2 accordingly in application.properties 
+Step-5  Open GlaucusApplication java file and Run the application on server (Run As -> Spring Boot app)
+Step-6  Open url http://localhost:8080/home (if server is running on other port(8080) then change accordingly in url) 
+Step-7  Open jmeter and open "Test Plan.jmx". (File -> open and choose "Test Plan.jmx" )
+Step-8  After loaded successfully then click on Home Page (inside jmeter project) and verify port no and protocol(http/https). For me, it's http and 8080.
+Step-9  Click on start button.
+Step-10 For testing you can hit again this url (http://localhost:8080/home ) on browser and verify the result or check the database.
