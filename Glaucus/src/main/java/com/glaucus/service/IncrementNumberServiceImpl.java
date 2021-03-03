@@ -15,7 +15,7 @@ public class IncrementNumberServiceImpl implements IncrementNumberServiceI {
 	IncreementNumberDao increementNumberDao;
 
 	final int id=1;
-	AtomicInteger atomicInteger = new AtomicInteger(0);
+	int incCounter = 0;
 
 	/*
 	 *  @author : Ajita Mittal
@@ -27,7 +27,7 @@ public class IncrementNumberServiceImpl implements IncrementNumberServiceI {
 	public IncrementNumber  getIncrement() {
 		IncrementNumber incrementNumber = new IncrementNumber();
 		try {
-		int incCounter = atomicInteger.incrementAndGet();  // incrementing value
+		 incCounter = incCounter+1;  // incrementing value
 
 		incrementNumber.setId(id);
 		incrementNumber.setIncreement(incCounter);   //Setting the incremented value
